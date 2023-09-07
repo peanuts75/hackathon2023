@@ -20,7 +20,12 @@
   aspect-ratio: auto;
   min-width: 100px;
   max-width: 800px;
-  width: 70%;
+  width: 30%;
+}
+
+#mannequin img{
+  height: 100%;
+  width: 100%
 }
 
 #menu {
@@ -67,6 +72,13 @@
 #collapse {
   cursor: pointer;
   flex-grow: 1;
+}
+
+.logo {
+  height: 10vh;
+  display: inline-block;
+  align-items: center;
+  margin-top: 0.5rem;
 }
 
 
