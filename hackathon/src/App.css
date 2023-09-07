@@ -37,10 +37,32 @@
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 #mannequin {
-  min-width: 400px;
+  min-width: 200px;
   min-height: 800px;
   aspect-ratio: 0.75;
   height: 90vh;
-  background-color: #999999;
+  background-color: #999;
+}
+
+#menu {
+  width: 10vw;
+  height: 90vw;
+}
+
+.menu-item {
+  min-height: 20px;
+  height: 10vh;
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid black;
 }
