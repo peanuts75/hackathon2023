@@ -11,12 +11,16 @@
 }
 
 #mannequin {
-  min-width: 373px;
-  min-height: 500px;
-  aspect-ratio: 0.74666;
   height: 90vh;
-  background-image: url("mannequinBase.png");
   background-size: cover;
+  border: none;
+  border-image: none;
+  outline: none;
+
+  aspect-ratio: auto;
+  min-width: 100px;
+  max-width: 800px;
+  width: 70%;
 }
 
 #menu {
@@ -24,20 +28,31 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-
 }
 
 .menu-item {
   min-height: 10px;
   width: 100%;
-  background-color: #ccc;
-  border: 1px solid black;
+  background-color: #f9c;
+  border: 5px inset #f9e;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  color: white;
+}
+
+.menu-item:first-child {
+  border-top-right-radius: 10px;
+}
+
+.menu-item:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 #dress-menu, #tops-menu, #bottoms-menu, #shoes-menu, #accessories-menu {
+  cursor: pointer;
   flex-grow: 4;
-  display: flex;
 }
 
 #total {
@@ -45,13 +60,15 @@
 }
 
 #checkout {
+  cursor: pointer;
   flex-grow: 2;
-  display: flex;
 }
 
 #collapse {
+  cursor: pointer;
   flex-grow: 1;
-  display: flex;
 }
+
+
 
 
