@@ -33,11 +33,13 @@
   background-color: #ccc;
   border: 1px solid black;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display:flex;
 }
 
 #dress-menu, #tops-menu, #bottoms-menu, #shoes-menu, #accessories-menu {
   flex-grow: 4;
-  display: flex;
 }
 
 #total {
@@ -46,12 +48,10 @@
 
 #checkout {
   flex-grow: 2;
-  display: flex;
 }
 
 #collapse {
   flex-grow: 1;
-  display: flex;
 }
 
 
