@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .mannequinContainer {
@@ -16,67 +16,100 @@
   border: none;
   border-image: none;
   outline: none;
-  position: relative;
+    position: relative;
   aspect-ratio: auto;
   min-width: 100px;
   max-width: 800px;
   width: 30%;
+    z-index: 1;
 }
 
+#mannequin img{
+  height: 100%;
+  width: 100%
+    z-index: 1;
+}
 
 #menu {
-  width: 10vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
+    width: 10vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item {
-  min-height: 10px;
-  width: 100%;
-  background-color: #f9c;
-  border: 5px inset #f9e;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-  color: white;
+    min-height: 10px;
+    width: 100%;
+    background-color: #f9c;
+    border: 5px inset #f9e;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
 }
 
 .menu-item:first-child {
-  border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .menu-item:last-child {
-  border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #dress-menu, #tops-menu, #bottoms-menu, #shoes-menu, #accessories-menu {
-  cursor: pointer;
-  flex-grow: 4;
+    cursor: pointer;
+    flex-grow: 4;
 }
 
 #total {
-  flex-grow: 10;
+    flex-grow: 10;
 }
 
 #checkout {
-  cursor: pointer;
-  flex-grow: 2;
+    cursor: pointer;
+    flex-grow: 2;
 }
 
 #collapse {
-  cursor: pointer;
-  flex-grow: 1;
+    cursor: pointer;
+    flex-grow: 1;
 }
 
 .logo {
-  height: 10vh;
-  display: inline-block;
-  align-items: center;
-  margin-top: 0.5rem;
+    height: 10vh;
+    display: inline-block;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
+.item-modal-item {
+    background-color: #0000;
+
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+}
+
+#item-modal-name {
+    left: 30vw;
+    top: 10vh;
+    width: 12vw;
+    height: 5vh;
+    font-family: "impact", "sans-serif";
+    font-size: 2rem;
+}
+
+#item-modal-item-price {
+    left: 30vw;
+    top: 15vh;
+    width: 12vw;
+    height: 5vh;
+    font-family: "impact", "sans-serif";
+    font-size: 3rem;
+}
 .modalContainer {
   height: 40vh;
   margin-top: 10rem;
@@ -94,12 +127,43 @@
   font-size: xx-large;
 }
 
+#item-modal-size-dropdown {
+    left: 30vw;
+    top: 20vh;
+    width: 12vw;
+    height: 5vh;
+    font-family: "impact", "sans-serif";
+    font-size: 3rem;
+}
 .ImageContainer {
   overflow: auto;
   height: 68%;
   white-space: nowrap;
 }
 
+#item-modal-add-to-cart {
+    left: 20vw;
+    top: 90vh;
+    min-width: 60vw;
+    max-width: 90vw;
+    height: 5vh;
+    font-family: "impact", "sans-serif";
+    font-size: 4vh;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    overflow: visible;
+}
+
+#item-modal-image > img {
+    position: absolute;
+    z-index: 2;
+}
 .productImage img {
   display: inline-block;
   width: 90%;
