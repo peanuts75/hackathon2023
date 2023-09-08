@@ -8,7 +8,7 @@ function ItemModal() {
     let image = require("../clothes/Dresses/z02fj718010s 14-06-2023_Batch 1 of 1.jpg")
     let imageDimensions = [100, 100, 100, 100]
     return (
-        <div id={"item-modal"}>
+        <div id={"item-modal"} className={"addToBag"}>
             <div className={"item-modal-item"} id={"item-modal-name"}>{name}</div>
             <div className={"item-modal-item"} id={"item-modal-item-price"}>{price}</div>
             <div className={"item-modal-item"} id={"item-modal-size-dropdown"}>{size.at(1)}</div>

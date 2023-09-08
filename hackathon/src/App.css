@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 #mannequin {
@@ -78,38 +78,13 @@
     margin-top: 0.5rem;
 }
 
-.item-modal-item {
-    background-color: #0000;
-
-    min-width: 10px;
-    min-height: 10px;
-    z-index: 2;
-    text-align: left;
-}
-
-#item-modal-name {
-    left: 30vw;
-    top: 10vh;
-    width: 12vw;
-    height: 5vh;
-    font-family: "impact", "sans-serif";
-    font-size: 2rem;
-}
-
-#item-modal-item-price {
-    left: 30vw;
-    top: 15vh;
-    width: 12vw;
-    height: 5vh;
-    font-family: "impact", "sans-serif";
-    font-size: 3rem;
-}
 .modalContainer {
   height: 40vh;
   margin-top: 10rem;
   border-radius: 1rem;
   background-color: #e7238d;
   width: 30vw;
+
 }
 
 .modalTitle {
@@ -121,42 +96,12 @@
   font-size: xx-large;
 }
 
-#item-modal-size-dropdown {
-    left: 30vw;
-    top: 20vh;
-    width: 12vw;
-    height: 5vh;
-    font-family: "impact", "sans-serif";
-    font-size: 3rem;
-}
 .ImageContainer {
   overflow: auto;
   height: 68%;
   white-space: nowrap;
 }
 
-#item-modal-add-to-cart {
-    left: 20vw;
-    top: 90vh;
-    min-width: 60vw;
-    max-width: 90vw;
-    height: 5vh;
-    font-family: "impact", "sans-serif";
-    font-size: 4vh;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: lightgray;
-    cursor: pointer;
-    overflow: visible;
-}
-
-#item-modal-image > img {
-    z-index: 2;
-}
 .productImage img {
   display: inline-block;
   width: 90%;
@@ -197,6 +142,20 @@
 }
 
 .mannequinButton {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.addToBag {
+    background-color: #e7238d;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 4rem;
+}
+
+#item-model-item {
+    color: white;
 }
