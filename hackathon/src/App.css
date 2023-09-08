@@ -161,6 +161,7 @@
   font-family: 'Oswald', serif;
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 5px;
 }
 
 .addToBag:hover {

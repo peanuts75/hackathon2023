@@ -1,7 +1,7 @@
 import '../App.css';
 
 function ItemModal() {
-    let name = "Generic dress"
+    let name = "Pink dress with a repeating hearts design"
     let price = "£15.00"
     let size = ["Small", "Medium", "Large"]
     let total = "£35.00"
