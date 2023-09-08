@@ -1,6 +1,7 @@
 import Mannequin from './components/Mannequin';
 import './App.css';
 import Menu from "./components/Menu";
+import Modal from './components/Modal'
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
           <div className={'logo'}>
               <img src={require("./MicrosoftTeams-image (9).png")} alt='logo' className={'logo'} />
           </div>
-        <div className={"container"}>
-          <Mannequin></Mannequin>
+        <div className={"mannequinContainer"}>
+            <Mannequin></Mannequin>
+            <Modal></Modal>
         </div>
       </header>
     </div>
