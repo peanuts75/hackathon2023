@@ -1,6 +1,19 @@
 import '../App.css';
 
 function Modal() {
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
     return (
         <>
          <head>
@@ -14,8 +27,8 @@ function Modal() {
                 <input type="text" placeholder="Looking for a product?" className={'searchBar'} />
                 </div>
             <div className="ImageContainer">
-                <div className="productImage">
-                    <img src={require("../clothes/Dresses/z02fj718010s 14-06-2023_Batch 1 of 1.jpg")} alt="Cinque Terre"/>
+                <div className="productImage" onDrop={drop} onDragOver={allowDrop} >
+                    <img src={require("../clothes/Dresses/IG878_001.png")} alt="Cinque Terre" draggable={true} onDragStart={drag} id="drag1"/>
                 </div>
                 <div className="productImage">
                     <img src={require("../clothes/Dresses/z02ig396010s 14-06-2023_Batch 1 of 1.jpg")} alt="Cinque Terre"/>

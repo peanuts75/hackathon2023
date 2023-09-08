@@ -4,6 +4,20 @@ import Menu from "./components/Menu";
 import Modal from './components/Modal'
 
 function App() {
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+
   return (
     <div className="App">
       <header className="App-header">
