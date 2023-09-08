@@ -2,13 +2,12 @@
     text-align: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1
+.mannequinContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 #mannequin {
@@ -115,6 +114,22 @@
     font-family: "impact", "sans-serif";
     font-size: 3rem;
 }
+.modalContainer {
+  height: 40vh;
+  margin-top: 10rem;
+  border-radius: 1rem;
+  background-color: #e7238d;
+  width: 30vw;
+}
+
+.modalTitle {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  display: inline-block;
+  padding-right: 3rem;
+  font-size: xx-large;
+}
 
 #item-modal-size-dropdown {
     left: 30vw;
@@ -123,6 +138,11 @@
     height: 5vh;
     font-family: "impact", "sans-serif";
     font-size: 3rem;
+}
+.ImageContainer {
+  overflow: auto;
+  height: 68%;
+  white-space: nowrap;
 }
 
 #item-modal-add-to-cart {
@@ -148,4 +168,19 @@
     position: absolute;
     z-index: 2;
 }
+.productImage img {
+  display: inline-block;
+  width: 90%;
+  margin-left: 0.2rem;
+  object-fit: cover;
+}
 
+.searchBar {
+  border-radius: 0.4rem;
+  align-items: right;
+  height: 2rem;
+}
+
+.modalHeader {
+  width: 100%;
+}
