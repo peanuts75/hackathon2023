@@ -18,19 +18,6 @@ const fetchData = async () => {
 };
 
 function App() {
-    function allowDrop(ev) {
-        ev.preventDefault();
-    }
-
-    function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
-    }
-
-    function drop(ev) {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-    }
 
   return (
     <div className="App">
@@ -39,10 +26,12 @@ function App() {
               <img src={require("./MicrosoftTeams-image (9).png")} alt='logo' className={'logo'} />
           </div>
         <div className={"mannequinContainer"}>
-            <Mannequin></Mannequin>
-            <Modal></Modal>
-            <ItemModal></ItemModal>
+                <Mannequin></Mannequin>
+                <Modal></Modal>
         </div>
+          <div classname={'addToBagContainer'}>
+              <ItemModal></ItemModal>
+          </div>
         <button onClick={fetchData}>
             scan
         </button>

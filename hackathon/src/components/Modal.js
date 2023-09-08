@@ -1,6 +1,7 @@
 import '../App.css';
 
 function Modal() {
+
     function allowDrop(ev) {
         ev.preventDefault();
     }
