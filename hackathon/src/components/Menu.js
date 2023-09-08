@@ -27,7 +27,6 @@ function Menu() {
             <div className={"menu-item"} id={"collapse"}>
                     Collapse menu
             </div>
-
         </div>
     )
 
