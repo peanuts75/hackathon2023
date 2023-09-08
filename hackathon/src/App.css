@@ -111,7 +111,7 @@
 
 .searchBar {
   border-radius: 0.4rem;
-  align-items: right;
+  /*align-items: right;*/
   height: 2rem;
 }
 
@@ -151,11 +151,28 @@
 
 .addToBag {
     background-color: #e7238d;
+    background-image: linear-gradient(to bottom, #fff8, #fff0);
+    border-top: 2px deeppink solid;
     margin-left: 20rem;
     margin-right: 20rem;
     margin-bottom: 4rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  font-family: 'Oswald', serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.addToBag:hover {
+  background-color: #e7238dcc;
+  color: #000c
 }
 
 #item-model-item {
     color: white;
+}
+
+.container {
+  display:flex;
+  justify-content: space-around;
 }
