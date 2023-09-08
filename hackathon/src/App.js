@@ -3,6 +3,19 @@ import './App.css';
 import Menu from "./components/Menu";
 import ItemModal from "./components/ItemModal";
 import Modal from './components/Modal'
+import Fetch_db from './lib/dynamodb';
+
+const fetchData = async () => {
+  try {
+    const response = Fetch_db();
+
+    console.log("Response " + response)
+    
+    return response;
+  } catch (e) {
+    console.log(e);
+  }
+};
 
 function App() {
   return (
@@ -16,6 +29,9 @@ function App() {
             <Modal></Modal>
             <ItemModal></ItemModal>
         </div>
+        <button onClick={fetchData}>
+            scan
+        </button>
       </header>
     </div>
   );
