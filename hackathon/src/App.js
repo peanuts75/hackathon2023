@@ -1,6 +1,7 @@
 import Mannequin from './components/Mannequin';
 import './App.css';
 import Menu from "./components/Menu";
+import ItemModal from "./components/ItemModal";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           </div>
         <div className={"container"}>
           <Mannequin></Mannequin>
+          <ItemModal></ItemModal>
         </div>
       </header>
     </div>
